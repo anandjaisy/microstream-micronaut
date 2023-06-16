@@ -17,5 +17,5 @@ netty:
 microstream:
   storage:
     main:
-      root-class: 'com.example.Fruit'
+      root-class: 'com.example.FruitContainer'
       storage-directory: 'build/fruit-storage'
