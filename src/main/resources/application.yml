@@ -1,0 +1,21 @@
+micronaut:
+  application:
+    name: demo
+  security:
+    intercept-url-map:
+      - pattern: /microstream/**
+        http-method: GET
+        access:
+          - isAnonymous()
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+
+
+microstream:
+  storage:
+    main:
+      root-class: 'com.example.Fruit'
+      storage-directory: 'build/fruit-storage'
